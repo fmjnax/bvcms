@@ -227,30 +227,58 @@ namespace CmsWeb.Models
         public DataTable ExcelDonorTotals(DateTime startdt, DateTime enddt,
             int campusid, bool? pledges, bool? nontaxdeductible, int? Online, bool includeUnclosed, int? tagid, string fundids, bool includePledges)
         {
+
+#if DEBUG2
+            // for reconciliation by developer
+            var v = from c in
+            DbUtil.Db.GetContributionsDetails(startdt, enddt, campusid,pledges, nontaxdeductible, includeUnclosed, tagid, fundids)
+            orderby c.ContributionId	
+            select c.ContributionId;
+            using(var tw = new StreamWriter("D:\\exportdonors.txt"))	
+               foreach (var s in v)	
+                  tw.WriteLine(s);
+#endif
             var nontaxded = includePledges ? 2 : (nontaxdeductible.HasValue ? (nontaxdeductible.Value ? 1 : 0) : (int?)null);
             pledges = nontaxded == 2 ? true : (bool?)null;
-
+            
             var q2 = from r in CurrentDatabase.GetTotalContributionsDonor(startdt, enddt, campusid, nontaxded, Online, includeUnclosed, tagid, fundids, pledges)
                      where ContributionStatusCode.Recorded.Equals(r.ContributionStatusId)
-                     where !ContributionTypeCode.ReturnedReversedTypes.Contains(r.ContributionTypeId)
-                     select new
+                     where !ContributionTypeCode.ReturnedReversedTypes.Contains(r.ContributionTypeId)                     
+                     group r by new 
                      {
-                         GiverId = r.CreditGiverId,
-                         Count = r.Count ?? 0,
-                         Amount = r.Amount ?? 0m,
-                         Pledged = r.PledgeAmount ?? 0m,
+                         GiverId = r.CreditGiverId,                         
                          r.Email,
-                         FirstName = r.Head_FirstName,
-                         LastName = r.Head_LastName,
-                         Spouse = r.SpouseName ?? "",
-                         MainFellowship = r.MainFellowship ?? "",
-                         MemberStatus = r.MemberStatus ?? "",
+                         r.Head_FirstName,
+                         r.Head_LastName,
+                         r.SpouseName,
+                         r.MainFellowship,
+                         r.MemberStatus,
                          r.JoinDate,
                          r.Addr,
                          r.Addr2,
                          r.City,
                          r.St,
                          r.Zip
+                     } into rr 
+                     orderby rr.Key.GiverId                     
+                     select new 
+                     {
+                         rr.Key.GiverId,
+                         Count = rr.Sum(x => x.Count) ?? 0,
+                         Amount = rr.Sum(x => x.Amount) ?? 0m,
+                         Pledged = rr.Sum(x => x.PledgeAmount) ?? 0m,
+                         rr.Key.Email,
+                         FirstName = rr.Key.Head_FirstName,
+                         LastName = rr.Key.Head_LastName,
+                         Spouse = rr.Key.SpouseName ?? "",
+                         MainFellowship = rr.Key.MainFellowship ?? "",
+                         MemberStatus = rr.Key.MemberStatus ?? "",
+                         rr.Key.JoinDate,
+                         rr.Key.Addr,
+                         rr.Key.Addr2,
+                         rr.Key.City,
+                         rr.Key.St,
+                         rr.Key.Zip
                      };
             return q2.ToDataTable();
         }
