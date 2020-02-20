@@ -232,6 +232,7 @@ namespace CmsWeb.Models
 
             var q2 = from r in CurrentDatabase.GetTotalContributionsDonor(startdt, enddt, campusid, nontaxded, Online, includeUnclosed, tagid, fundids, pledges)
                      where ContributionStatusCode.Recorded.Equals(r.ContributionStatusId)
+                     where !ContributionTypeCode.ReturnedReversedTypes.Contains(r.ContributionTypeId)
                      select new
                      {
                          GiverId = r.CreditGiverId,
