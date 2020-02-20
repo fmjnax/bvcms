@@ -740,6 +740,7 @@ namespace CmsWeb.Areas.Reports.Controllers
             return new VisitsAbsentsResult2(id.Value, prefix);
         }
 
+        [Authorize(Roles = "Finance,FinanceAdmin,FinanceViewOnly")]
         [HttpGet]
         public ActionResult VitalStats()
         {

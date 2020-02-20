@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+    <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,69 +59,69 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
             <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
             </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="APITestPlan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Areas\Public\Controllers\APITestPlan.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
-  </data>
-  <data name="VolunteerRequestModel_ComposeMessage_Body" xml:space="preserve">
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <data name="APITestPlan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Areas\Public\Controllers\APITestPlan.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
+    </data>
+    <data name="VolunteerRequestModel_ComposeMessage_Body" xml:space="preserve">
     <value>
 &lt;p&gt;Hi {first},&lt;/p&gt;
 &lt;p&gt;We need additional volunteers for {org}&lt;br&gt;
@@ -137,7 +137,7 @@ Thank you for your consideration,&lt;br /&gt;
 {sendername}
 &lt;/p&gt;</value>
   </data>
-  <data name="VolSubModel_ComposeMessage_Body" xml:space="preserve">
+    <data name="VolSubModel_ComposeMessage_Body" xml:space="preserve">
     <value>&lt;p&gt;Hi {first},&lt;/p&gt;
 
 &lt;p&gt;I need a substitute for {org}&lt;br&gt;
@@ -159,7 +159,7 @@ Thank you for your consideration,&lt;br /&gt;
 {sendername}
 &lt;/p&gt;</value>
   </data>
-  <data name="AccountModel_ForgotPasswordReset" xml:space="preserve">
+    <data name="AccountModel_ForgotPasswordReset" xml:space="preserve">
     <value>&lt;p&gt;Someone recently requested a new password for this email address {email}.
 To set your password, click the link below:&lt;/p&gt;
 &lt;blockquote&gt;&lt;a href="{resetlink}"&gt;New Password&lt;/a&gt;&lt;/blockquote&gt;
@@ -168,7 +168,7 @@ To set your password, click the link below:&lt;/p&gt;
 The TouchPoint Team&lt;/p&gt;
 </value>
   </data>
-  <data name="AccountModel_ForgotPasswordBadEmail" xml:space="preserve">
+    <data name="AccountModel_ForgotPasswordBadEmail" xml:space="preserve">
     <value>&lt;p&gt;Someone recently requested a new password for this email address {email}.  
 However, we could not find an account associated with this email address.
 You may try a different email address, or contact the church.&lt;/p&gt;
@@ -177,7 +177,7 @@ You may try a different email address, or contact the church.&lt;/p&gt;
 The TouchPoint Team&lt;/p&gt;
 </value>
   </data>
-  <data name="AccountModel_ForgotPasswordReset2" xml:space="preserve">
+    <data name="AccountModel_ForgotPasswordReset2" xml:space="preserve">
     <value>&lt;p&gt;Someone recently requested a new password for {email}.
 To set your password, click your username below:&lt;/p&gt;
 &lt;blockquote&gt;{resetlink}&lt;/blockquote&gt;
@@ -186,7 +186,7 @@ To set your password, click your username below:&lt;/p&gt;
 The TouchPoint Team&lt;/p&gt;
 </value>
   </data>
-  <data name="AccountModel_NewUserWelcome" xml:space="preserve">
+    <data name="AccountModel_NewUserWelcome" xml:space="preserve">
     <value>Hi {name},
 &lt;p&gt;You have a new account on our Church Management System. 
 Click on your username below to set your password and login to the system.&lt;/p&gt;
@@ -194,11 +194,11 @@ Click on your username below to set your password and login to the system.&lt;/p
 &lt;h3&gt;Your username is: &lt;b&gt;&lt;a href="{link}"&gt;{username}&lt;/a&gt;&lt;/h3&gt;
 &lt;/blockquote&gt;</value>
   </data>
-  <data name="ContributionStatementHeader" xml:space="preserve">
+    <data name="ContributionStatementHeader" xml:space="preserve">
     <value>&lt;h1&gt;Sample Church&lt;/h1&gt;
 &lt;h2&gt;2000 Appling Rd. | Cordova | TN 38088-1210 | (901) 347-2000&lt;/h2&gt;</value>
   </data>
-  <data name="ContributionStatementNotice" xml:space="preserve">
+    <data name="ContributionStatementNotice" xml:space="preserve">
     <value>&lt;p&gt;&lt;i&gt;
 NOTE: No goods or services were provided to you by the church in connection with any contibution;
 any value received consisted entirely of intangible religious benefits.
@@ -209,7 +209,7 @@ qualifies as a part of the Southern Baptist Convention's group tax exemption rul
 Thank you for your faithfulness in the giving of your time, talents, and resources. Together we can share the love of Jesus with our city.
 &lt;/i&gt;&lt;/p&gt;</value>
   </data>
-  <data name="OrgMembersModel_SendMovedNotices" xml:space="preserve">
+    <data name="OrgMembersModel_SendMovedNotices" xml:space="preserve">
     <value>&lt;p&gt;{name},&lt;/p&gt;
 &lt;p&gt;You have been assigned to {org} in room {room}. The leader's name is {leader}.&lt;/p&gt;
 &lt;p&gt;Please call {phone} if you have any questions.&lt;/p&gt;
@@ -217,13 +217,13 @@ Thank you for your faithfulness in the giving of your time, talents, and resourc
 &lt;p&gt;Thank you!&lt;br/&gt;
 {church}&lt;/p&gt;</value>
   </data>
-  <data name="DiffEmailMessage" xml:space="preserve">
+    <data name="DiffEmailMessage" xml:space="preserve">
     <value>Hi {name},
 &lt;p&gt;You registered for {org} using a different email address than the one we have on record.
 It is important that you call the church &lt;strong&gt;{phone}&lt;/strong&gt; to update our records
 so that you will receive future important notices regarding this registration.&lt;/p&gt;</value>
   </data>
-  <data name="NoEmailMessage" xml:space="preserve">
+    <data name="NoEmailMessage" xml:space="preserve">
     <value>Hi {name},
 &lt;p&gt;You registered for {org}, and we found your record, 
 but there was no email address on your Existing record in our database.
@@ -235,7 +235,7 @@ But we won't add that to your record without your permission.
 
 Thank you&lt;/p&gt;</value>
   </data>
-  <data name="AccountController_ForgotUsername" xml:space="preserve">
+    <data name="AccountController_ForgotUsername" xml:space="preserve">
     <value>Hi {name},
 &lt;p&gt;Your username is: {username}&lt;/p&gt;
 &lt;p&gt;If you did not request this, please disregard this message.&lt;/p&gt;
@@ -243,7 +243,7 @@ Thank you&lt;/p&gt;</value>
 The TouchPoint Team&lt;/p&gt;
 </value>
   </data>
-  <data name="CreateAccount_ExistingUser" xml:space="preserve">
+    <data name="CreateAccount_ExistingUser" xml:space="preserve">
     <value>Hi {name},
 &lt;p&gt;We noticed you already have an account in our church database.&lt;/p&gt;
 &lt;p&gt;You can login at &lt;a href="{host}"&gt;{host}&lt;/a&gt;. 
@@ -255,12 +255,12 @@ Just login to &lt;a href="{host}"&gt;{host}&lt;/a&gt; and you will be taken to y
 &lt;p&gt;Thank You&lt;/p&gt;
 </value>
   </data>
-  <data name="ConfirmSubscriptions" xml:space="preserve">
+    <data name="ConfirmSubscriptions" xml:space="preserve">
     <value>Thank you for managing your subscriptions to {org}&lt;br/&gt;
 You have the following subscriptions:&lt;br/&gt;
 {details}</value>
   </data>
-  <data name="CompactDirectoryParameters" xml:space="preserve">
+    <data name="CompactDirectoryParameters" xml:space="preserve">
     <value>{	
 Comment: "Gives a table 7.5 inches wide suitable for 8x11 portrait",
 PageHeight: 11,
@@ -279,7 +279,7 @@ FontSize: 10,
 FontSizeEmail: 9 
 }</value>
   </data>
-  <data name="CompactDirectoryParameters2" xml:space="preserve">
+    <data name="CompactDirectoryParameters2" xml:space="preserve">
     <value>{
 	Comment: "Gives a table 4.9 inches wide suitable for bi-fold booklet landscape (2 pages per sheet)",
 	PageHeight: 11,
@@ -298,7 +298,7 @@ FontSizeEmail: 9
 	FontSizeEmail: 5.5
 }</value>
   </data>
-  <data name="OnlineRegModel_ThankYouMessage" xml:space="preserve">
+    <data name="OnlineRegModel_ThankYouMessage" xml:space="preserve">
     <value>
     &lt;h2&gt;Transaction Completed&lt;/h2&gt;
     &lt;p style='color: Black'&gt;
@@ -307,13 +307,16 @@ FontSizeEmail: 9
     &lt;/p&gt;
     &lt;p style='color: Blue'&gt;&lt;a href='{url}'&gt;Start a New Transaction&lt;/a&gt;&lt;/p&gt;</value>
   </data>
-  <data name="CustomColumns" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>CustomColumns.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="ReportsMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Views\Shared\Menu\ReportsMenu.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="SettingsRegistrationModel_DefaulConfirmation" xml:space="preserve">
+    <data name="CustomColumns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>CustomColumns.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    </data>
+    <data name="ReportsMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Views\Shared\Menu\ReportsMenu.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    </data>
+    <data name="ReportsStatisticsMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Views\Shared\Menu\ReportsStatisticsMenu.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    </data>
+    <data name="SettingsRegistrationModel_DefaulConfirmation" xml:space="preserve">
     <value>Hi {first}
 &lt;p&gt;Here is your confirmation for {org}.&lt;/p&gt;
 DETAILS: &lt;br/&gt;
@@ -322,10 +325,10 @@ DETAILS: &lt;br/&gt;
 Your Ministry Team for {org}
 &lt;/p&gt;</value>
   </data>
-  <data name="RecentVisitsAbsents" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Areas\Org\Views\OrgSearch\RecentVisitsAbsents.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="VolSubModel_VolunteerSubConfirm" xml:space="preserve">
+    <data name="RecentVisitsAbsents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Areas\Org\Views\OrgSearch\RecentVisitsAbsents.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    </data>
+    <data name="VolSubModel_VolunteerSubConfirm" xml:space="preserve">
     <value>
 &lt;p&gt;{substitute},&lt;/p&gt;
 &lt;p&gt;Thank you so much.&lt;/p&gt;
@@ -334,7 +337,7 @@ in the {org}&lt;br /&gt;
 on {meetingdate} at {meetingtime}.
 See you there!&lt;/p&gt;</value>
   </data>
-  <data name="NotifyDuplicateUserOnMobile" xml:space="preserve">
+    <data name="NotifyDuplicateUserOnMobile" xml:space="preserve">
     <value>Hi {name},
 &lt;p&gt;It appears that you created a user account from your mobile device. 
 We found your existing record but you used this email address '{otheremail}' which is not the one we have your record.
@@ -345,7 +348,7 @@ so that your data will not stay duplicated.&lt;/p&gt;
 &lt;p&gt;{church}&lt;/p&gt;
 </value>
   </data>
-  <data name="InvolvementTableCurrent" xml:space="preserve">
+    <data name="InvolvementTableCurrent" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;InvolvementTable&gt;
   &lt;Columns&gt;
@@ -357,7 +360,7 @@ so that your data will not stay duplicated.&lt;/p&gt;
   &lt;/Columns&gt;
 &lt;/InvolvementTable&gt;</value>
   </data>
-  <data name="InvolvementTablePending" xml:space="preserve">
+    <data name="InvolvementTablePending" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;InvolvementTable&gt;
   &lt;Columns&gt;
@@ -370,7 +373,7 @@ so that your data will not stay duplicated.&lt;/p&gt;
   &lt;/Columns&gt;
 &lt;/InvolvementTable&gt;</value>
   </data>
-  <data name="InvolvementTablePrevious" xml:space="preserve">
+    <data name="InvolvementTablePrevious" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;InvolvementTable&gt;
   &lt;Columns&gt;
@@ -382,7 +385,7 @@ so that your data will not stay duplicated.&lt;/p&gt;
   &lt;/Columns&gt;
 &lt;/InvolvementTable&gt;</value>
   </data>
-  <data name="OrgSearchFields" xml:space="preserve">
+    <data name="OrgSearchFields" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;OrgSearch&gt;
   &lt;Fields&gt;
@@ -397,22 +400,22 @@ so that your data will not stay duplicated.&lt;/p&gt;
   &lt;/Fields&gt;
 &lt;/OrgSearch&gt;</value>
   </data>
-  <data name="PictureDirectoryTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Areas\Search\Views\PictureDirectory\Results.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="PictureDirectorySql" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Areas\Search\Views\PictureDirectory\PictureDirectory.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="DocxAveryLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Areas\Reports\Models\Avery\DocxAveryLabel.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DocxRollsheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Areas\Reports\Models\Attendance\DocxRollsheet.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CompanyName" xml:space="preserve">
+    <data name="PictureDirectoryTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Areas\Search\Views\PictureDirectory\Results.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    </data>
+    <data name="PictureDirectorySql" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Areas\Search\Views\PictureDirectory\PictureDirectory.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    </data>
+    <data name="DocxAveryLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Areas\Reports\Models\Avery\DocxAveryLabel.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="DocxRollsheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Areas\Reports\Models\Attendance\DocxRollsheet.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="CompanyName" xml:space="preserve">
     <value>TouchPoint Software, Inc.</value>
   </data>
-  <data name="ContributionsController_ContributionsAdvancedSearch_" xml:space="preserve">
+    <data name="ContributionsController_ContributionsAdvancedSearch_" xml:space="preserve">
     <value>
 with ids as (
 	select * from dbo.Contributions2SearchIds(@json)
@@ -490,7 +493,7 @@ from dbo.Contribution c
 	left outer join lookup.Campus ca on ca.Id = c.CampusId
 </value>
   </data>
-  <data name="RoleSettingDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Views\Shared\RoleSettingDefaults.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
+    <data name="RoleSettingDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>Views\Shared\RoleSettingDefaults.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    </data>
 </root>

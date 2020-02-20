@@ -1,8 +1,10 @@
 ﻿@using CmsWeb.Code
 @{
+var hasFinanceRole = User.IsInRole("Finance") || User.IsInRole("FinanceAdmin") || User.IsInRole("FinanceViewOnly");
     var c1 = ReportsMenuModel.CustomItems1;
     var c2 = ReportsMenuModel.CustomItems2;
     var c3 = ReportsMenuModel.Items;
+    var c4 = ReportsMenuModel.StatisticsItems;
     var ncols = 1
       + (c1.HasValue() ? 1 : 0)
       + (c2.HasValue() ? 1 : 0);
@@ -15,6 +17,10 @@
             <ul class="dropdown-menu dropdown-menu-large menu-1col row">
                 <li class="col-sm-12">
                     <ul>
+                        @if (hasFinanceRole)
+                        {
+                            @Column(c4)
+                        }
                         @Column(c3)
                     </ul>
                 </li>
@@ -33,6 +39,10 @@
                 </li>
                 <li class="col-sm-6">
                     <ul>
+                        @if (hasFinanceRole)
+                        {
+                            @Column(c4)
+                        }
                         @Column(c3)
                     </ul>
                 </li>
@@ -55,6 +65,10 @@
                 </li>
                 <li class="col-sm-4">
                     <ul>
+                        @if (hasFinanceRole)
+                        {
+                            @Column(c4)
+                        }
                         @Column(c3)
                     </ul>
                 </li>

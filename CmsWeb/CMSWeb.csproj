@@ -2637,6 +2637,7 @@
     <Content Include="Views\Shared\Menu\ReportsMenu.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\Shared\Menu\ReportsStatisticsMenu.xml" />
     <Content Include="Views\Shared\Pager3.cshtml" />
     <Content Include="Views\Shared\NotFound.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Boolean.cshtml" />

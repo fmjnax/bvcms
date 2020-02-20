@@ -11,6 +11,7 @@ using UtilityExtensions;
 
 namespace CmsWeb.Areas.Figures.Controllers
 {
+    [Authorize(Roles = "Finance,FinanceAdmin,FinanceViewOnly")]
     public class FiguresController : CmsStaffController
     {
         public List<ProgModel> Programs;
@@ -22,7 +23,7 @@ namespace CmsWeb.Areas.Figures.Controllers
         public FiguresController(IRequestManager requestManager) : base(requestManager)
         {
         }
-
+        
         public ActionResult Index()
         {
             Progs();

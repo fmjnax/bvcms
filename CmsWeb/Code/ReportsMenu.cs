@@ -61,6 +61,11 @@ namespace CmsWeb.Code
             get { return XDocument.Parse(Resource1.ReportsMenu); }
         }
 
+        private static XDocument ReportsStatisticsMenu
+        {
+            get { return XDocument.Parse(Resource1.ReportsStatisticsMenu); }
+        }
+
         public static string Items
         {
             get
@@ -72,6 +77,20 @@ namespace CmsWeb.Code
                 }
 
                 return ReportItems(xdoc, "/ReportsMenu");
+            }
+        }
+
+        public static string StatisticsItems
+        {
+            get
+            {
+                var xdoc = ReportsStatisticsMenu;
+                if (xdoc?.Root == null)
+                {
+                    return null;
+                }
+
+                return ReportItems(xdoc, "/ReportsStatisticsMenu");
             }
         }
 

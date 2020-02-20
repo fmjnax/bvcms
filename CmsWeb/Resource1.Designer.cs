@@ -567,12 +567,12 @@ namespace CmsWeb {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
         ///&lt;ReportsMenu&gt;
-        ///  &lt;Header excludedRoles=&quot;OrgLeadersOnly&quot;&gt;Statistics&lt;/Header&gt;
-        ///  &lt;Report excludedRoles=&quot;OrgLeadersOnly&quot; link=&quot;/Reports/VitalStats&quot;&gt;Vital Stats&lt;/Report&gt;
-        ///  &lt;Report excludedRoles=&quot;OrgLeadersOnly&quot; link=&quot;/Figures/Figures/Index&quot;&gt;Vital Stats Graphs&lt;/Report&gt;
-        ///  &lt;Header&gt;Attendance Summary&lt;/Header&gt;
-        ///  &lt;Report link=&quot;/Reports/ChurchAttendance&quot; target=&quot;_blank&quot;&gt;Week at a Glance&lt;/Report&gt;
-        ///  &lt;Report link=&quot;/Reports/ChurchAttendance2&quot; target=&quot;_blank&quot;&gt;Average Week at a Gl [rest of string was truncated]&quot;;.
+        ///    &lt;Header&gt;Attendance Summary&lt;/Header&gt;
+        ///    &lt;Report link=&quot;/Reports/ChurchAttendance&quot; target=&quot;_blank&quot;&gt;Week at a Glance&lt;/Report&gt;
+        ///    &lt;Report link=&quot;/Reports/ChurchAttendance2&quot; target=&quot;_blank&quot;&gt;Average Week at a Glance&lt;/Report&gt;
+        ///    &lt;Report requiredSetting=&quot;UseMeetingDescriptionPickList&quot; link =&quot;/Reports/MeetingAttendance&quot; target=&quot;_blank&quot;&gt;Attendance by Meeting Type&lt;/Report&gt;
+        ///    &lt;Header excludedRoles=&quot;OrgLeadersOnly&quot;&gt;Decisions&lt;/Header&gt;
+        ///    &lt;Report excluded [rest of string was truncated]&quot;;.
         /// </summary>
         public static string ReportsMenu {
             get {
@@ -581,17 +581,27 @@ namespace CmsWeb {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;ReportsStatisticsMenu&gt;
+        ///    &lt;Header excludedRoles=&quot;OrgLeadersOnly&quot;&gt;Statistics&lt;/Header&gt;
+        ///    &lt;Report excludedRoles=&quot;OrgLeadersOnly&quot; link=&quot;/Reports/VitalStats&quot;&gt;Vital Stats&lt;/Report&gt;
+        ///    &lt;Report excludedRoles=&quot;OrgLeadersOnly&quot; link=&quot;/Figures/Figures/Index&quot;&gt;Vital Stats Graphs&lt;/Report&gt;    
+        ///&lt;/ReportsStatisticsMenu&gt;
+        ///.
+        /// </summary>
+        public static string ReportsStatisticsMenu {
+            get {
+                return ResourceManager.GetString("ReportsStatisticsMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;DefaultSettings&gt;
-        ///    &lt;setting name=&quot;DisableHomePage&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;DisablePersonLinks&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;HideEmailDetails&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;HideExtraValueEdit&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;HideGuestsOrgMembers&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;HideInactiveOrgMembers&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;HidePendingOrgMembers&quot; value=&quot;true&quot; /&gt;
-        ///    &lt;setting name=&quot;HideMinistryTab&quot; value=&quot;true&quot; /&gt;
-        ///    [rest of string was truncated]&quot;;.
+        ///    &lt;Location name=&quot;Involvement&quot;&gt;
+        ///        &lt;setting name=&quot;CanEditCGInfoEVs&quot; value=&quot;false&quot; friendly=&quot;Org Extra Values&quot; true=&quot;Allow&quot; false=&quot;Disallow&quot; tooltip=&quot;Allows user to edit existing extra values on an extra value tab&quot; /&gt;
+        ///        &lt;setting name=&quot;DisablePersonLinks&quot; value=&quot;false&quot; friendly=&quot;Person Links&quot; true=&quot;Enable&quot; false=&quot;Disable&quot; tooltip=&quot;Enable/Disable hyperlinking to a person&apos;s profile (in orgs)&quot; reverse=&quot;true&quot;/&gt;
+        ///        &lt;setting name=&quot;Edit [rest of string was truncated]&quot;;.
         /// </summary>
         public static string RoleSettingDefaults {
             get {
