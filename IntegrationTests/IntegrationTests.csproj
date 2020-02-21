@@ -122,6 +122,7 @@
     <Compile Include="Support\FeatureTestBase.cs" />
     <Compile Include="Support\IISExpress.cs" />
     <Compile Include="Support\Settings.cs" />
+    <Compile Include="Views\Shared\Menu\ReportsTests.cs" />
     <Compile Include="WebAppCollection.cs" />
     <Compile Include="WebAppFixture.cs" />
   </ItemGroup>

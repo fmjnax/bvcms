@@ -1,6 +1,6 @@
 ﻿@using CmsWeb.Code
 @{
-var hasFinanceRole = User.IsInRole("Finance") || User.IsInRole("FinanceAdmin") || User.IsInRole("FinanceViewOnly");
+    var hasFinanceRole = User.IsInRole("Finance") || User.IsInRole("FinanceAdmin") || User.IsInRole("FinanceViewOnly");
     var c1 = ReportsMenuModel.CustomItems1;
     var c2 = ReportsMenuModel.CustomItems2;
     var c3 = ReportsMenuModel.Items;
