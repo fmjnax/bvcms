@@ -67,7 +67,7 @@ namespace CmsWeb.Areas.Search.Controllers
             foreach (var c in m.TopClause.AllConditions)
             {
                 sb.AppendLine(c.Key.ToString());
-                if (c.Value.FieldInfo == null)
+                if (!FieldClass.Fields.ContainsKey(c.Value.ConditionName) || c.Value.FieldInfo == null)
                 {
                     return NewQuery();
                 }

@@ -57,6 +57,9 @@ namespace CmsData
             if (!Enum.TryParse(c.ConditionName, out qt))
                 return null;
 
+            if (!FieldClass.Fields.ContainsKey(c.ConditionName))
+                return "ERROR! This condition does not exist.";
+            
             level++;
             var inner = ExportExpressionList(c);
             level--;

@@ -134,7 +134,8 @@ namespace CmsData
             get
             {
                 if ((_FieldInfo == null || _FieldInfo.Name != ConditionName))
-                    _FieldInfo = FieldClass.Fields[ConditionName];
+                    _FieldInfo = FieldClass.Fields.ContainsKey(ConditionName)? FieldClass.Fields[ConditionName] : null;
+
                 return _FieldInfo;
             }
         }
