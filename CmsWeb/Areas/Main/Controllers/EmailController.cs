@@ -31,14 +31,14 @@ namespace CmsWeb.Areas.Main.Controllers
         {
             if (!body.HasValue())
             {
-                body = TempData["body"] as string;
+                body = Util.GetFromSessionTemp("emailreminderbody");
             }
 
             if (!subj.HasValue() && templateID != 0)
             {
                 if (templateID == null)
                 {
-                    return View("SelectTemplate", new EmailTemplatesModel
+                    return View("SelectTemplate", new EmailTemplatesModel(CurrentDatabase)
                     {
                         WantParents = parents ?? false,
                         QueryId = id,
@@ -48,9 +48,7 @@ namespace CmsWeb.Areas.Main.Controllers
                 DbUtil.LogActivity("Emailing people");
 
                 var m = new MassEmailer(id, parents, ccparents, nodups);
-
-                if (User.IsInRole("EmailBuilder"))
-                    m.UseUnlayer = useUnlayer;
+                m.UseUnlayer = useUnlayer;
 
                 m.Host = CurrentDatabase.Host;
 
@@ -168,7 +166,7 @@ namespace CmsWeb.Areas.Main.Controllers
             var design = string.Empty;
             var body = string.Empty;
 
-            if (c.TypeID == ContentTypeCode.TypeUnlayerSavedDraft)
+            if (ContentTypeCode.IsUnlayer(c.TypeID))
             {
                 dynamic payload = JsonConvert.DeserializeObject(c.Body);
                 design = payload.design;
@@ -260,7 +258,6 @@ namespace CmsWeb.Areas.Main.Controllers
 
             return content.Id;
         }
-
         [HttpPost]
         public ActionResult CloneDraft(int id, string name, Guid queryId)
         {
